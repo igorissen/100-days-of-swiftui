@@ -8,3 +8,4 @@
 - [x] Day 06 - Loops + Checkpoint 03
 - [x] Day 07 - Functions, part 1
 - [x] Day 08 - Functions, part 2 + checkpoint 04
+- [x] Day 09 - Closures + checkpoint 05
