@@ -6,3 +6,4 @@
 - [x] Day 04 - Complex data types, part 2 + Checkpoint 02
 - [x] Day 05 - Conditions
 - [x] Day 06 - Loops + Checkpoint 03
+- [x] Day 07 - Functions, part 1
