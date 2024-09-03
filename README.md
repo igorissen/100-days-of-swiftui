@@ -9,3 +9,4 @@
 - [x] Day 07 - Functions, part 1
 - [x] Day 08 - Functions, part 2 + checkpoint 04
 - [x] Day 09 - Closures + checkpoint 05
+- [x] Day 10 - Structs, part 1
