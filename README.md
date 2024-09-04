@@ -15,7 +15,7 @@
 - [x] Day 09 - Closures + checkpoint 05
 - [x] Day 10 - Structs, part 1
 - [x] Day 11 - Structs, part 2 + Checkpoint 06
-- [ ] Day 12 - Classes
+- [x] Day 12 - Classes + Checkpoint 07
 - [ ] Day 13 - Protocols and extensions
 - [ ] Day 14 - Optionals
 
