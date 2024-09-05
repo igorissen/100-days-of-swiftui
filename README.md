@@ -27,3 +27,4 @@
 
 - [x] Day 16 - Project 1, part one (WeSplit)
 - [x] Day 17 - Project 1, part two (WeSplit)
+- [x] Day 18 - Project 1, part three (WeSplit) + Challenge
