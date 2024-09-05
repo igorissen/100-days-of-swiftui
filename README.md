@@ -17,7 +17,7 @@
 - [x] Day 11 - Structs, part 2 + Checkpoint 06
 - [x] Day 12 - Classes + Checkpoint 07
 - [x] Day 13 - Protocols and extensions + Checkpoint 08
-- [ ] Day 14 - Optionals + Checkpoint 09
+- [X] Day 14 - Optionals + Checkpoint 09
 
 ### Day 15: Consolidation 1
 
