@@ -22,3 +22,7 @@
 ### Day 15: Consolidation 1
 
 - [x] Day 15 - Swift review
+
+### Day 16-24: Starting SwiftUI
+
+- [x] Day 16 - Project 1, part one
