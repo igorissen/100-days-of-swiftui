@@ -25,4 +25,5 @@
 
 ### Day 16-24: Starting SwiftUI
 
-- [x] Day 16 - Project 1, part one
+- [x] Day 16 - Project 1, part one (WeSplit)
+- [x] Day 17 - Project 1, part two (WeSplit)
