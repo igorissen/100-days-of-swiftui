@@ -21,4 +21,4 @@
 
 ### Day 15: Consolidation 1
 
-- [ ] Day 15 - Swift review
+- [x] Day 15 - Swift review
