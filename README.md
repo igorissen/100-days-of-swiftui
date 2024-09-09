@@ -30,3 +30,4 @@
 - [x] Day 18 - Project 1, part three (WeSplit)
 - [x] Day 19 - Challenge day
 - [x] Day 20 - Project 2, part one (Guess the flag)
+- [x] Day 21 - Project 2, part two (Guess the flag)
