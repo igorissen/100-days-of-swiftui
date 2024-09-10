@@ -57,23 +57,37 @@ import SwiftUI
 //    }
 //}
 
-struct GridStack<Content: View>: View {
-    let rows: Int
-    let columns: Int
-    @ViewBuilder let content: (Int, Int) -> Content
-    
-    var body: some View {
-        VStack {
-            ForEach(0..<rows, id: \.self) { row in
-                HStack {
-                    ForEach(0..<columns, id: \.self) { column in
-                        content(row, column)
-                    }
-                }
-            }
-        }
+struct LargeBlueTitle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundStyle(.blue)
     }
 }
+
+extension View {
+    func largeBlueTitle() -> some View {
+        modifier(LargeBlueTitle())
+    }
+}
+
+//struct GridStack<Content: View>: View {
+//    let rows: Int
+//    let columns: Int
+//    @ViewBuilder let content: (Int, Int) -> Content
+//    
+//    var body: some View {
+//        VStack {
+//            ForEach(0..<rows, id: \.self) { row in
+//                HStack {
+//                    ForEach(0..<columns, id: \.self) { column in
+//                        content(row, column)
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
 
 struct ContentView: View {
 //    @State private var useRedText = false
@@ -154,10 +168,15 @@ struct ContentView: View {
 //            .frame(width: 300, height: 200)
 //            .watermark(with: "Hacking with Swift")
         
-        GridStack(rows: 4, columns: 4) { row, column in
-                Image(systemName: "\(row * 4 + column).circle")
-                Text("R\(row)C\(column)")
+//        GridStack(rows: 4, columns: 4) { row, column in
+//                Image(systemName: "\(row * 4 + column).circle")
+//                Text("R\(row)C\(column)")
+//        }
+        
+        HStack {
+            Text("Hello, World!")
         }
+        .largeBlueTitle()
     }
 }
 
