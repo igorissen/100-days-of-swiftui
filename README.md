@@ -32,3 +32,4 @@
 - [x] Day 20 - Project 2, part one (Guess the flag)
 - [x] Day 21 - Project 2, part two (Guess the flag)
 - [x] Day 22 - Project 2, part three (Guess the flag)
+- [x] Day 23 - Project 3, part one
