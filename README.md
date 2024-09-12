@@ -42,7 +42,7 @@
 ### Days 26-34: Expanding your skills
 
 - [x] [Day 26](./day_26) - Project 4, part one
-- [ ] [Day 27](./day_27) - Project 4, part two
+- [x] [Day 27](./day_27) - Project 4, part two
 - [ ] [Day 28](./day_28) - Project 4, part three
 - [ ] [Day 29](./day_29) - Project 5, part one
 - [ ] [Day 30](./day_30) - Project 5, part two
