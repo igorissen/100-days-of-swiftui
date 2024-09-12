@@ -1,5 +1,7 @@
 # Simple data types, part 2
 
+[⬅ DAY 1](../day_01) | [..](../) | [DAY 3 ➡](../day_03)
+
 [https://www.hackingwithswift.com/100/swiftui/2](https://www.hackingwithswift.com/100/swiftui/2)
 
 ## Checkpoint 1
