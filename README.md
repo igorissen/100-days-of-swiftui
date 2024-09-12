@@ -38,3 +38,19 @@
 ### Day 25: Consolidation II
 
 - [x] [Day 25](./day_25) - Milestone: Projects 1-3
+
+### Days 26-34: Expanding your skills
+
+- [x] [Day 26](./day_26) - Project 4, part one
+- [ ] [Day 27](./day_27) - Project 4, part two
+- [ ] [Day 28](./day_28) - Project 4, part three
+- [ ] [Day 29](./day_29) - Project 5, part one
+- [ ] [Day 30](./day_30) - Project 5, part two
+- [ ] [Day 31](./day_31) - Project 5, part three
+- [ ] [Day 32](./day_32) - Project 6, part one
+- [ ] [Day 33](./day_33) - Project 6, part two
+- [ ] [Day 34](./day_34) - Project 6, part three
+
+### Day 35: Consolidation III
+
+- [ ] [Day 35](./day_35) - Milestone: Projects 4-6
