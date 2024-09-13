@@ -14,27 +14,44 @@ struct ContentView: View {
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
+    @State private var score = 0
     
     var body: some View {
         NavigationStack {
             List {
+                Section("Word selected") {
+                    Text(rootWord)
+                        .font(.largeTitle)
+                }
+                
+                Section("You score") {
+                    Text("\(score)")
+                }
+                
                 Section {
                     TextField("Enter your word", text: $newWord)
                         .textInputAutocapitalization(.never)
                 }
                 
-                Section {
-                    ForEach(usedWords, id: \.self) { word in
-                        HStack {
-                            Image(systemName: "\(word.count).circle")
-                            Text(word)
+                if !usedWords.isEmpty {
+                    Section("Words found") {
+                        ForEach(usedWords, id: \.self) { word in
+                            HStack {
+                                Image(systemName: "\(word.count).circle")
+                                Text(word)
+                            }
                         }
                     }
                 }
             }
-            .navigationTitle(rootWord)
+//            .navigationTitle(rootWord)
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
+            .toolbar {
+                Button("Start Game") {
+                    startGame()
+                }
+            }
             .alert(errorTitle, isPresented: $showingError) {
                 Button("OK") {}
             } message: {
@@ -46,7 +63,15 @@ struct ContentView: View {
     func addNewWord() {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
-        guard answer.count > 0 else { return }
+        guard answer.count > 2 else {
+            wordError(title: "Word too short", message: "Provide a word with more than 2 characters!")
+            return
+        }
+        
+        guard answer != rootWord else {
+            wordError(title: "Word duplicated", message: "Do not use the same word as the root word!")
+            return
+        }
         
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original!")
@@ -67,6 +92,12 @@ struct ContentView: View {
             usedWords.insert(answer, at: 0)
         }
         
+        var lettersCount = 0
+        for word in usedWords {
+            lettersCount += word.count
+        }
+        score = usedWords.count * lettersCount
+        
         newWord = ""
     }
     
@@ -75,6 +106,8 @@ struct ContentView: View {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
                 rootWord = allWords.randomElement() ?? "silkworm"
+                usedWords = [String]()
+                score = 0
                 return
             }
         }
