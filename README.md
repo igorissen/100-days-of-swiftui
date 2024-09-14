@@ -53,4 +53,4 @@
 
 ### Day 35: Consolidation III
 
-- [ ] [Day 35](./day_35) - Milestone: Projects 4-6
+- [x] [Day 35](./day_35) - Milestone: Projects 4-6
