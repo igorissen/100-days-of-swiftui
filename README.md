@@ -48,7 +48,7 @@
 - [x] [Day 30](./day_30) - Project 5, part two
 - [x] [Day 31](./day_31) - Project 5, part three
 - [x] [Day 32](./day_32) - Project 6, part one
-- [ ] [Day 33](./day_33) - Project 6, part two
+- [x] [Day 33](./day_33) - Project 6, part two
 - [ ] [Day 34](./day_34) - Project 6, part three
 
 ### Day 35: Consolidation III
