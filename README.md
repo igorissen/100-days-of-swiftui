@@ -57,7 +57,7 @@
 
 ### Days 36-46: Scaling up to bigger apps
 
-- [ ] [Day 36](./day_36) – Project 7, part one
+- [x] [Day 36](./day_36) – Project 7, part one
 - [ ] [Day 37](./day_37) – Project 7, part two
 - [ ] [Day 38](./day_38) – Project 7, part three
 - [ ] [Day 39](./day_39) – Project 8, part one
