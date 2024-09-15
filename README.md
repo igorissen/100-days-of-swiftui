@@ -19,7 +19,7 @@
 - [x] [Day 13](./day_13) - Protocols and extensions + Checkpoint 08
 - [X] [Day 14](./day_14) - Optionals + Checkpoint 09
 
-### Day 15: Consolidation 1
+### Day 15: Consolidation I
 
 - [x] [Day 15](./day_15) - Swift review
 
@@ -54,3 +54,98 @@
 ### Day 35: Consolidation III
 
 - [x] [Day 35](./day_35) - Milestone: Projects 4-6
+
+### Days 36-46: Scaling up to bigger apps
+
+- [ ] [Day 36](./day_36) – Project 7, part one
+- [ ] [Day 37](./day_37) – Project 7, part two
+- [ ] [Day 38](./day_38) – Project 7, part three
+- [ ] [Day 39](./day_39) – Project 8, part one
+- [ ] [Day 40](./day_40) – Project 8, part two
+- [ ] [Day 41](./day_41) – Project 8, part three
+- [ ] [Day 42](./day_42) – Project 8, part four
+- [ ] [Day 43](./day_43) – Project 9, part one
+- [ ] [Day 44](./day_44) – Project 9, part two
+- [ ] [Day 45](./day_45) – Project 9, part three
+- [ ] [Day 46](./day_46) – Project 9, part four
+
+### Days 47-48: Consolidation IV
+
+- [ ] [Day 47](./day_47) – Milestone: Projects 7-9
+- [ ] [Day 48](./day_48) – Expanding your horizons
+
+### Days 49-59: Focus on data
+
+- [ ] [Day 49](./day_49) – Project 10, part one
+- [ ] [Day 50](./day_50) – Project 10, part two
+- [ ] [Day 51](./day_51) – Project 10, part three
+- [ ] [Day 52](./day_52) – Project 10, part four
+- [ ] [Day 53](./day_53) – Project 11, part one
+- [ ] [Day 54](./day_54) – Project 11, part two
+- [ ] [Day 55](./day_55) – Project 11, part three
+- [ ] [Day 56](./day_56) – Project 11, part four
+- [ ] [Day 57](./day_57) – Project 12, part one
+- [ ] [Day 58](./day_58) – Project 12, part two
+- [ ] [Day 59](./day_59) – Project 12, part three
+
+### Days 60-61: Consolidation V
+
+- [ ] [Day 60](./day_60) – Milestone: Projects 10-12
+- [ ] [Day 61](./day_61) – Time for SwiftData
+
+### Days 62-76: Filters, maps, and more
+
+- [ ] [Day 62](./day_62) – Project 13, part one
+- [ ] [Day 63](./day_63) – Project 13, part two
+- [ ] [Day 64](./day_64) – Project 13, part three
+- [ ] [Day 65](./day_65) – Project 13, part four
+- [ ] [Day 66](./day_66) – Project 13, part five
+- [ ] [Day 67](./day_67) – Project 13, part six
+- [ ] [Day 68](./day_68) – Project 14, part one
+- [ ] [Day 69](./day_69) – Project 14, part two
+- [ ] [Day 70](./day_70) – Project 14, part three
+- [ ] [Day 71](./day_71) – Project 14, part four
+- [ ] [Day 72](./day_72) – Project 14, part five
+- [ ] [Day 73](./day_73) – Project 14, part six
+- [ ] [Day 74](./day_74) – Project 15, part one
+- [ ] [Day 75](./day_75) – Project 15, part two
+- [ ] [Day 76](./day_76) – Project 15, part three
+
+### Days 77-78: Consolidation VI
+
+- [ ] [Day 77](./day_77) – Milestone: Projects 13-15
+- [ ] [Day 78](./day_78) – Time for MapKit
+
+### Days 79-94: Controlling UI flow
+
+- [ ] [Day 79](./day_79) – Project 16, part one
+- [ ] [Day 80](./day_80) – Project 16, part two
+- [ ] [Day 81](./day_81) – Project 16, part three
+- [ ] [Day 82](./day_82) – Project 16, part four
+- [ ] [Day 83](./day_83) – Project 16, part five
+- [ ] [Day 84](./day_84) – Project 16, part six
+- [ ] [Day 85](./day_85) – Project 16, part seven
+- [ ] [Day 86](./day_86) – Project 17, part one
+- [ ] [Day 87](./day_87) – Project 17, part two
+- [ ] [Day 88](./day_88) – Project 17, part three
+- [ ] [Day 89](./day_89) – Project 17, part four
+- [ ] [Day 90](./day_90) – Project 17, part five
+- [ ] [Day 91](./day_91) – Project 17, part six
+- [ ] [Day 92](./day_92) – Project 18, part one
+- [ ] [Day 93](./day_93) – Project 18, part two
+- [ ] [Day 94](./day_94) – Project 18, part three
+
+### Days 95: Consolidation VII
+
+- [ ] [Day 95](./day_95) – Milestone: Projects 16-18
+
+### Days 96-99: One last project
+
+- [ ] [Day 96](./day_96) – Project 19, part one
+- [ ] [Day 97](./day_97) – Project 19, part two
+- [ ] [Day 98](./day_98) – Project 19, part three
+- [ ] [Day 99](./day_99) – Project 19, part four
+
+### Day 100: Wrap up
+
+- [ ] [Day 100](./day_100) – Final exam
