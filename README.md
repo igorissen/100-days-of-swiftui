@@ -62,7 +62,7 @@
 - [x] [Day 38](./day_38) – Project 7, part three
 - [x] [Day 39](./day_39) – Project 8, part one
 - [x] [Day 40](./day_40) – Project 8, part two
-- [ ] [Day 41](./day_41) – Project 8, part three
+- [x] [Day 41](./day_41) – Project 8, part three
 - [ ] [Day 42](./day_42) – Project 8, part four
 - [ ] [Day 43](./day_43) – Project 9, part one
 - [ ] [Day 44](./day_44) – Project 9, part two
