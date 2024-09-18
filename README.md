@@ -66,7 +66,7 @@
 - [x] [Day 42](./day_42) – Project 8, part four
 - [x] [Day 43](./day_43) – Project 9, part one
 - [x] [Day 44](./day_44) – Project 9, part two
-- [ ] [Day 45](./day_45) – Project 9, part three
+- [x] [Day 45](./day_45) – Project 9, part three
 - [ ] [Day 46](./day_46) – Project 9, part four
 
 ### Days 47-48: Consolidation IV

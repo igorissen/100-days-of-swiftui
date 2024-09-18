@@ -113,63 +113,122 @@ import SwiftUI
 //    }
 //}
 
-@Observable
-class PathStore {
-    var path: NavigationPath {
-        didSet {
-            save()
-        }
-    }
-    
-    private let savePath = URL.documentsDirectory.appending(path: "SavedPath")
-    
-    init() {
-        if let data = try? Data(contentsOf: savePath) {
-            if let decoded = try? JSONDecoder().decode(NavigationPath.CodableRepresentation.self, from: data) {
-                path = NavigationPath(decoded)
-                return
-            }
-        }
-        
-        path = NavigationPath()
-    }
-    
-    func save() {
-        guard let representation = path.codable else { return }
-        
-        do {
-            let data = try JSONEncoder().encode(representation)
-            try data.write(to: savePath)
-        } catch {
-            print("Failed to save navigation data")
-        }
-    }
-}
+//@Observable
+//class PathStore {
+//    var path: NavigationPath {
+//        didSet {
+//            save()
+//        }
+//    }
+//    
+//    private let savePath = URL.documentsDirectory.appending(path: "SavedPath")
+//    
+//    init() {
+//        if let data = try? Data(contentsOf: savePath) {
+//            if let decoded = try? JSONDecoder().decode(NavigationPath.CodableRepresentation.self, from: data) {
+//                path = NavigationPath(decoded)
+//                return
+//            }
+//        }
+//        
+//        path = NavigationPath()
+//    }
+//    
+//    func save() {
+//        guard let representation = path.codable else { return }
+//        
+//        do {
+//            let data = try JSONEncoder().encode(representation)
+//            try data.write(to: savePath)
+//        } catch {
+//            print("Failed to save navigation data")
+//        }
+//    }
+//}
+//
+//struct DetailView: View {
+//    let number: Int
+//    @Binding var path: NavigationPath
+//    
+//    var body: some View {
+//        NavigationLink("Go to random number", value: Int.random(in: 1...1_000))
+//            .navigationTitle("Number: \(number)")
+//            .toolbar {
+//                Button("Home") {
+//                    path = NavigationPath()
+//                }
+//            }
+//    }
+//}
+//
+//struct ContentView: View {
+//    @State private var pathStore = PathStore()
+//    
+//    var body: some View {
+//        NavigationStack(path: $pathStore.path) {
+//            DetailView(number: 0, path: $pathStore.path)
+//                .navigationDestination(for: Int.self) { i in
+//                    DetailView(number: i, path: $pathStore.path)
+//                }
+//        }
+//    }
+//}
 
-struct DetailView: View {
-    let number: Int
-    @Binding var path: NavigationPath
-    
-    var body: some View {
-        NavigationLink("Go to random number", value: Int.random(in: 1...1_000))
-            .navigationTitle("Number: \(number)")
-            .toolbar {
-                Button("Home") {
-                    path = NavigationPath()
-                }
-            }
-    }
-}
+//struct ContentView: View {
+//    var body: some View {
+//        NavigationStack {
+//            List(0..<100) { i in
+//                    Text("Row \(i)")
+//            }
+//            .navigationTitle("Title goes here")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbarBackground(.blue)
+//            .toolbarColorScheme(.dark)
+//            .toolbar(.hidden)
+//        }
+//    }
+//}
+
+//struct ContentView: View {
+//    var body: some View {
+//        NavigationStack {
+//            Text("Hello, World!")
+//                .toolbar {
+//                    ToolbarItem(placement: .confirmationAction) {
+//                        Button("Tap Me") {
+//                            
+//                        }
+//                    }
+//                    
+//                    ToolbarItem(placement: .topBarLeading) {
+//                        Button("Tap Me Not") {
+//                            
+//                        }
+//                    }
+//                    
+//                    ToolbarItemGroup(placement: .bottomBar) {
+//                        Button("Tap Me OR") {
+//                            
+//                        }
+//                        
+//                        Button("Tap Me AND") {
+//
+//                        }
+//                    }
+//                }
+//                .navigationBarBackButtonHidden()
+//        }
+//    }
+//}
 
 struct ContentView: View {
-    @State private var pathStore = PathStore()
+    @State private var title = "SwiftUI"
     
     var body: some View {
-        NavigationStack(path: $pathStore.path) {
-            DetailView(number: 0, path: $pathStore.path)
-                .navigationDestination(for: Int.self) { i in
-                    DetailView(number: i, path: $pathStore.path)
-                }
+        NavigationStack {
+            Text("Hello, World!")
+                .navigationTitle($title)
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
