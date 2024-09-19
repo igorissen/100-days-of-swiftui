@@ -41,8 +41,6 @@
 		2CED5C8A2C976CDC00C1E106 = {
 			isa = PBXGroup;
 			children = (
-				2C71160D2C983B0000F687EE /* ExpenseSectionView.swift */,
-				2C71160B2C98383200F687EE /* View-ExpenseStyle.swift */,
 				2CED5C952C976CDC00C1E106 /* iExpense */,
 				2CED5C942C976CDC00C1E106 /* Products */,
 			);
@@ -64,6 +62,8 @@
 				2C7116092C98262400F687EE /* AddView.swift */,
 				2CED5C9A2C976CDF00C1E106 /* Assets.xcassets */,
 				2CED5C9C2C976CDF00C1E106 /* Preview Content */,
+				2C71160D2C983B0000F687EE /* ExpenseSectionView.swift */,
+				2C71160B2C98383200F687EE /* View-ExpenseStyle.swift */,
 			);
 			path = iExpense;
 			sourceTree = "<group>";
