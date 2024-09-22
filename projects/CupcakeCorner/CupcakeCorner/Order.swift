@@ -20,12 +20,12 @@ class Order: Codable {
         case _city = "city"
         case _zip = "zip"
     }
-    
+
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
-    
+
     var type = 0
     var quantity = 3
-    
+
     var specialRequestEnabled = false {
         didSet {
             if specialRequestEnabled == false {
@@ -36,37 +36,68 @@ class Order: Codable {
     }
     var extraFrosting = false
     var addSprinkles = false
-    
-    var name = ""
-    var streetAddress = ""
-    var city = ""
-    var zip = ""
-    
+
+    var name: String {
+        didSet {
+            UserDefaults.standard.set(name, forKey: "name")
+        }
+    }
+    var streetAddress: String {
+        didSet {
+            UserDefaults.standard.set(streetAddress, forKey: "streetAddress")
+        }
+    }
+    var city: String {
+        didSet {
+            UserDefaults.standard.set(city, forKey: "city")
+        }
+    }
+    var zip: String {
+        didSet {
+            UserDefaults.standard.set(zip, forKey: "zip")
+        }
+    }
+
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+//        if name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+//            || streetAddress.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+//            || city.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+//            || zip.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+//        {
+//            return false
+//        }
+
+        if name.isReallyEmpty || streetAddress.isReallyEmpty || city.isReallyEmpty || zip.isReallyEmpty {
             return false
         }
-        
+
         return true
     }
-    
+
     var cost: Decimal {
         // $2 per cake
         var cost = Decimal(quantity) * 2
-        
+
         // complicated cakes cost more
         cost += Decimal(type) / 2
-        
+
         // $1 per cake for extra frosting
         if extraFrosting {
             cost += Decimal(quantity)
         }
-        
+
         // $0.50 per cake for sprinkles
         if addSprinkles {
             cost += Decimal(quantity) / 2
         }
-        
+
         return cost
+    }
+    
+    init() {
+        name = UserDefaults.standard.string(forKey: "name") ?? ""
+        streetAddress = UserDefaults.standard.string(forKey: "streetAddress") ?? ""
+        city = UserDefaults.standard.string(forKey: "city") ?? ""
+        zip = UserDefaults.standard.string(forKey: "zip") ?? ""
     }
 }
