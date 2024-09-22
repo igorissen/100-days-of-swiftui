@@ -72,7 +72,7 @@
 ### Days 47-48: Consolidation IV
 
 - [x] [Day 47](./day_47) – Milestone: Projects 7-9
-- [ ] [Day 48](./day_48) – Expanding your horizons
+- [x] [Day 48](./day_48) – Expanding your horizons
 
 ### Days 49-59: Focus on data
 
