@@ -17,6 +17,8 @@ struct AddBookView: View {
     @State private var review = ""
     @State private var rating = 3
     
+    @State private var showingBadInputAlert = false
+    
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
 
     var body: some View {
@@ -42,12 +44,20 @@ struct AddBookView: View {
                 Section {
                     Button("Save") {
                         let book = Book(title: title, author: author, genre: genre, review: review, rating: rating)
-                        modelContext.insert(book)
-                        dismiss()
+                        
+                        if book.isValid() {
+                            modelContext.insert(book)
+                            dismiss()
+                        } else {
+                            showingBadInputAlert = true
+                        }
                     }
                 }
             }
             .navigationTitle("Add Book")
+            .alert("Missing Input Data", isPresented: $showingBadInputAlert) { } message: {
+                Text("Book title or author is missing!")
+            }
         }
     }
 }
