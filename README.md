@@ -84,7 +84,7 @@
 - [x] [Day 54](./day_54) – Project 11, part two
 - [x] [Day 55](./day_55) – Project 11, part three
 - [x] [Day 56](./day_56) – Project 11, part four
-- [ ] [Day 57](./day_57) – Project 12, part one
+- [x] [Day 57](./day_57) – Project 12, part one
 - [ ] [Day 58](./day_58) – Project 12, part two
 - [ ] [Day 59](./day_59) – Project 12, part three
 
