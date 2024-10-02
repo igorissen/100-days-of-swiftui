@@ -90,7 +90,7 @@
 
 ### Days 60-61: Consolidation V
 
-- [ ] [Day 60](./day_60) – Milestone: Projects 10-12
+- [x] [Day 60](./day_60) – Milestone: Projects 10-12
 - [ ] [Day 61](./day_61) – Time for SwiftData
 
 ### Days 62-76: Filters, maps, and more
