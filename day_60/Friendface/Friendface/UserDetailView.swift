@@ -5,6 +5,7 @@
 //  Created by Ismael Gorissen on 02/10/2024.
 //
 
+import SwiftData
 import SwiftUI
 
 struct UserDetailView: View {
@@ -32,7 +33,7 @@ struct UserDetailView: View {
             .headerProminence(.increased)
 
             Section {
-                ForEach(user.friends, id: \.id) { friend in
+                ForEach(user.friends) { friend in
                     NavigationLink {
                         if let foundUser = getUser(by: friend.id) {
                             UserDetailView(user: foundUser, users: users)
@@ -47,6 +48,7 @@ struct UserDetailView: View {
             }
             .headerProminence(.increased)
         }
+        .listStyle(.grouped)
         .navigationTitle(user.name)
         .toolbar {
             Label(user.isActive ? "Online" : "Offline", systemImage: "antenna.radiowaves.left.and.right.circle.fill")
@@ -65,4 +67,5 @@ struct UserDetailView: View {
 
 #Preview {
     UserDetailView(user: User.example, users: [User]())
+        .modelContainer(for: User.self)
 }
