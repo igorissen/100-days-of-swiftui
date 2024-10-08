@@ -96,7 +96,7 @@
 ### Days 62-76: Filters, maps, and more
 
 - [x] [Day 62](./day_62) – Project 13, part one
-- [ ] [Day 63](./day_63) – Project 13, part two
+- [x] [Day 63](./day_63) – Project 13, part two
 - [ ] [Day 64](./day_64) – Project 13, part three
 - [ ] [Day 65](./day_65) – Project 13, part four
 - [ ] [Day 66](./day_66) – Project 13, part five
